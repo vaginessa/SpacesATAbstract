@@ -1,0 +1,407 @@
+﻿	/*-----------------------------------------------------------------------------------------------*/
+	/*Homepage CSS - Coded by Liane Stevenson c/o Abstract Thinking Ltd - www.abstract-thinking.co.uk*/
+	/*-----------------------------------------------------------------------------------------------*/
+	
+	/*Font Definition--------------------------------------------------------------------------------*/
+	
+	@font-face {
+		font-family: 'existencelight';
+		src: url('fonts/existance/existence-light-webfont.eot');
+		src: url('fonts/existance/existence-light-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/existance/existence-light-webfont.woff') format('woff'),
+		url('fonts/existance/existence-light-webfont.ttf') format('truetype'),  
+		url('fonts/existance/existence-light-webfont.svg#existencelight') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+	
+	@font-face {
+		font-family: 'kg_let_her_go_solidregular';
+		src: url('fonts/LetHerGo/kglethergosolid-webfont.eot');
+		src: url('fonts/LetHerGo/kglethergosolid-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/LetHerGo/kglethergosolid-webfont.woff') format('woff'),
+		url('fonts/LetHerGo/kglethergosolid-webfont.ttf') format('truetype'),
+		url('fonts/LetHerGo/kglethergosolid-webfont.svg#kg_let_her_go_solidregular') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+	
+	@font-face {
+		font-family: 'throw_my_hands_up_in_the_aiRg';
+		src: url('fonts/HandsInTheAir/throwmyhandsupintheair-webfont.eot');
+		src: url('fonts/HandsInTheAir/throwmyhandsupintheair-webfont.eot?#iefix') format('embedded-opentype'),
+			 url('fonts/HandsInTheAir/throwmyhandsupintheair-webfont.woff') format('woff'),
+			 url('fonts/HandsInTheAir/throwmyhandsupintheair-webfont.ttf') format('truetype'),
+			 url('fonts/HandsInTheAir/throwmyhandsupintheair-webfont.svg#throw_my_hands_up_in_the_aiRg') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+	
+	/*End Font Definition---------------------------------------------------------------------------------------------*/
+	
+	/*Main Css--------------------------------------------------------------------------------------------------------*/
+	
+	html, body {
+		height: 100%; margin: 0px; padding: 0px;
+	}
+	
+	img {
+		border: 0px;
+	}
+	
+	#tabs-1 a { 
+		display: block; text-decoration: none; padding: 10px; 
+	} 
+
+    #tabs-2 a { 
+		display: block; text-decoration: none; padding: 10px; 
+	} 
+
+    #tabs-3 a { 
+		display: block; text-decoration: none; padding: 10px; 
+	} 
+
+	body 
+	{
+		margin:0px;
+	}
+
+	header 
+	{
+		width:94%;
+		height:0;
+    	background-size:100%;
+    	background:url(/images/bck.jpg) no-repeat;
+		padding:2% 3%;
+    	padding-bottom:15%;
+    	border-bottom:4px solid #09a2f2;
+    	background-repeat:no-repeat;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		-o-background-size:cover;
+		background-size:cover;
+		background-position:center;
+		font-family:'existencelight';
+		font-size: 3.5em; 
+	}
+	
+	.light {
+		color:#FFF;
+	}
+	
+	.dark {
+		color:#000;
+	}
+
+	header span 
+	{
+		-webkit-border-radius: 50em;
+		-moz-border-radius: 50em;
+		border-radius: 50em;
+	}
+	
+	header img {
+		vertical-align: middle;
+	}
+	
+	.image-wrap {
+		position:relative; 
+		display:inline-block;
+		width: 150px; 
+		height: 150px;
+	}
+	
+	#leftContent {
+		float:left;
+		width:75%;
+		background: #e6e6e6;
+		height:66%;
+	}
+	
+	aside {
+		float:right;
+		width:24%;	
+	}
+	
+	div.arrow-down {
+		width: 0; 
+		height: 0; 
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 20px solid #09a2f2;
+		font-size: 0;
+		line-height: 0;
+		float:right;
+	}
+	
+	.clearfix {
+		clear:both;
+	}
+	
+	#toDoFlag {
+		font-family: 'kg_let_her_go_solidregular';
+		font-size:2.3em;
+		color:#FFF;
+		background:url(/images/todoFlag.png) no-repeat transparent;
+		height:62px;
+		width:162px;
+		margin-top:24px;
+		margin-left:-29px;
+		padding-left:32px;
+		padding-top:6px;
+	}
+	
+	.checkboxOuter {
+		width: 350px;
+		margin: 15px;
+		margin-left:10px;
+		position: relative;
+		font-family: 'throw_my_hands_up_in_the_aiRg';
+		font-size:1.5em;
+	}
+	
+	.checkboxOuter label {
+		cursor: pointer;
+		position: absolute;
+		width: 25px;
+		height: 25px;
+		top: 0;
+		left: 0;
+		background: #eee;
+		border:1px solid #ddd;
+	}
+	
+	.checkboxOuter label:after {
+		opacity: 0.2;
+		content: '';
+		position: absolute;
+		width: 9px;
+		height: 5px;
+		background: transparent;
+		top: 6px;
+		left: 7px;
+		border: 3px solid #333;
+		border-top: none;
+		border-right: none;
+	
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+	}
+	
+	.checkboxOuter label:hover::after {
+		opacity: 0.5;
+	}
+	
+	.checkboxOuter input[type=checkbox]:checked + label:after {
+		opacity: 1;
+	}
+	
+	.checkboxInput {
+		margin-right:20px;	
+	}
+	
+	#toDoInput {
+		background: #E6E6E6;
+		font-family: 'throw_my_hands_up_in_the_aiRg';
+		border: 0px;
+		border-bottom:3px solid #B1B1B1;
+		color:000;
+		font-family: Arial;
+		font-size:1.5em;
+		margin: 10px;
+		margin-top:25px;
+		padding-left:5px;
+		height:42px;
+	}
+	
+	#addToDo {
+		background:url(/images/todo-input.jpg) #08a2f1 no-repeat center;
+		height:47px;
+		width:47px;
+		colour:#61c5f9;
+		border:0px;
+		margin-left:-14px;
+		cursor:pointer;
+		border-bottom:3px solid #0b90d4;
+		margin-top:14px;
+	}
+	
+	input {
+		vertical-align: middle;
+	}
+	
+	#social {
+		float:left;
+		width:24px;
+		display:inline-block;
+		margin-left:-38px;
+		margin-top:23px;
+	}
+	
+	#social a {
+		margin:-5px;
+		padding:0px;
+		height:24px;
+		display: inline-block;	
+	}
+	
+	#social img {
+		display: inline-block;	
+	}
+	
+	#tasks {
+		float:left;
+	}
+
+    /*End Main Css----------------------------------------------------------------------------------------------------*/
+	
+    /*Start Responsive Css--------------------------------------------------------------------------------------------*/
+
+    /*1024 + ---------------------------------------------------------------------------------------------------------*/
+
+	@media screen and (max-width: 1024px) {
+		header {
+		padding:1.5% 3%;
+    	padding-bottom:16%;
+		font-size: 2.5em; 
+		}
+		
+		#leftContent {
+		height:73%;
+		}
+		
+		.ui-tabs {
+		margin-top: -20px;
+		padding: 0.2em;
+		position: relative;
+		width: 88%;
+		}
+		
+		#toDoFlag {
+		margin-left: -20px;
+		}
+		
+		.checkboxOuter {
+		font-size:1em;
+		width: 210px;
+		}
+		
+		#toDoInput {
+		width:55%;
+		font-size:1em;
+		}
+		
+		#social {
+		margin-left: -30px;
+		}
+	}
+
+    /*800 + ----------------------------------------------------------------------------------------------------------*/
+	
+	@media screen and (max-width: 800px) {
+		.image-wrap {
+		width: 100px; 
+		height: 100px;
+		background-size:100px !important;
+		}
+		
+		.image-wrap img {
+		width:100px;
+		height:100px;	
+		}
+		
+		#leftContent {
+		height:85.2%;
+		width:70%;
+		}
+		
+		aside {
+		float:left;
+		width:30%;	
+		}
+		
+		.ui-tabs {
+		margin-top: -20px;
+		padding: 0.2em;
+		position: relative;
+		width: 82%;
+		}
+		
+		.ui-widget {
+		font-size: 0.8em;
+		}
+		
+		#ui-id-4 {
+		font-size:1em;
+		}
+		
+		#ui-id-5 img {
+		width:20px;
+		height:20px;	
+		}
+		
+		#toDoFlag {
+		margin-left: -10px;
+		}
+		
+		#social {
+		margin-left: -20px;
+		}
+		
+		#tasks {
+		float: left;
+		width: 89%;
+		}
+		
+		#toDoInput {
+		width:68%;
+		font-size:0.8em;
+		}
+	}
+
+    /*600 + ----------------------------------------------------------------------------------------------------------*/
+	
+	@media screen and (max-width: 600px) {
+		header {
+    	padding-bottom:15%;
+		font-size: 2.5em; 
+		}
+	
+		.image-wrap {
+		width: 50px; 
+		height: 50px;
+		background-size:50px !important;
+		}
+		
+		.image-wrap img {
+		width:50px;
+		height:50px;	
+		}
+		
+		#leftContent {
+		width:100%;
+		height:auto;
+		}
+		
+		.ui-tabs {
+		margin-top: -20px;
+		padding: 0.2em;
+		position: relative;
+		width: 85%;
+		}
+		
+		aside {
+			float: left;
+			width: 100%;
+		}
+		
+		#social {
+		float: right;
+		margin-top: -400px;
+		}
+	}
+
+    /*End Responsive CSS-------------------------------------------------------------------------------------------------*/
